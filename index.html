@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>京东商城</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- CSS RESET  normalize —— 浏览器样式重置 -->
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="index.css">
+	<link rel="shortcut icon" href="./imgs/jjjj.png">
+
+	<!-- rem -->
+	<script src="js/common.js"></script>
+	<script src="js/jquery-1.9.0.min.js"></script>
+	<script src='js/swiper.min.js'></script>
+    <script>
+    	window.onload = function(){//轮播图
+    		var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        paginationClickable: true,
+		        loop:true,
+		        autoplay:1500
+		    });
+    	}
+    	var starttime=new Date("2017/12/31");
+		setInterval(function(){//计时器
+			var nowtime=new Date();
+			var time=starttime-nowtime;
+			// var day=parseInt(time/1000/60/60/24);
+			var hour=parseInt(time/1000/60/60%24);
+			var minute=parseInt(time/1000/60%60);
+			var seconds=parseInt(time/1000%60);
+			$(".timespan").html(hour+"时"+minute+"分"+seconds+"秒");
+		},1000);
+		$(function(){//地区下拉框
+			$(".login").bind("click",function(){
+				if($(".area").is(":hidden")){
+					
+					$(".area").css("display","block");
+				}else{
+					$(".area").css("display","none");
+				}
+				$('.area').find('li').click(function(){
+				$('.areas').html( $(this).html() ); 
+			});
+			});
+		});
+		$(function(){//底部的收缩、隐藏
+			var cc = true;
+			$('.more').click(function(){
+				if( cc ){
+					$(".ccc").slideDown(500);
+					$(".more").html("收起");
+					cc = false;
+				}else{
+					$(".ccc").slideUp(500);
+					$(".more").html("点击查看更多");
+					cc = true;
+				}
+				
+			})
+		});
+    </script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="head">
+		<img src="imgs/jd.png" class="logo">
+		<input class="search" type="text" placeholder='9.11大闸蟹超级单品日  满499减200'>
+		<div class="login">
+			<span class="areas">地区</span>
+			<ul class="area">
+				<li>南京</li>
+				<li>扬州</li>
+				<li>苏州</li>
+				<li>徐州</li>
+				<li>镇江</li>
+			</ul>
+		</div>
+	</div>		
+	<!-- banner图 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+				<img src="imgs/banner01.jpg">
+            </div>
+            <div class="swiper-slide">
+				<img src="imgs/banner02.jpg">
+            </div>
+            <div class="swiper-slide">
+				<img src="imgs/banner03.jpg">
+            </div>
+            <div class="swiper-slide">
+				<img src="imgs/banner04.jpg">
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+	<!-- 容器部分 -->
+	<div class="content">
+		<!-- 分类 -->
+		<div class="kinds">
+			<div class="one">
+				<div class="one-top">
+					<img src="./imgs/logo01.png">
+					<div class="one-tips">
+						京东超市
+					</div>
+				</div>
+			</div>
+			<div class="one">
+				<div class="one-top">
+					<img src="./imgs/logo02.png">
+				</div>
+				<div class="one-tips">
+					京东超市
+				</div>
+			</div>
+			<div class="one">
+				<div class="one-top">
+					<img src="./imgs/logo03.png">
+				</div>
+				<div class="one-tips">
+					京东超市
+				</div>
+			</div>
+			<div class="one">
+				<div class="one-top">
+					<img src="./imgs/logo04.png">
+				</div>
+				<div class="one-tips">
+					京东超市
+				</div>
+			</div>
+			<div class="one">
+				<div class="one-top">
+					<img src="./imgs/logo05.png">
+				</div>
+				<div class="one-tips">
+					京东超市
+				</div>
+			</div>
+			<div class="one">
+				<div class="one-top">
+					<img src="./imgs/logo06.png">
+				</div>
+				<div class="one-tips">
+					京东超市
+				</div>
+			</div>
+			<div class="one">
+				<div class="one-top">
+					<img src="./imgs/logo07.png">
+				</div>
+				<div class="one-tips">
+					京东超市
+				</div>
+			</div>
+			<div class="one">
+				<div class="one-top">
+					<img src="./imgs/logo08.png">
+				</div>
+				<div class="one-tips">
+					京东超市
+				</div>
+			</div>
+			<div class="one">
+				<div class="one-top">
+					<img src="./imgs/logo09.png">
+				</div>
+				<div class="one-tips">
+					京东超市
+				</div>
+			</div>
+			<div class="one">
+				<div class="one-top">
+					<img src="./imgs/logo10.png">
+				</div>
+				<div class="one-tips">
+					京东超市
+				</div>
+			</div>
+		</div>
+		<!-- showmore -->
+		<div class="showmore">
+			<img src="imgs/logal001.jpg">
+		</div>
+		<!-- 秒杀 -->
+		<div class="kg"></div>
+		<div class="miao">
+			<div class="miao-left">
+				<img src="imgs/jidonglogal01.png" alt="">
+				<span class="xianshi"><b>限时抢购:</b></span><span class="timespan"></span>
+			</div>
+			<div class="miaos">
+				<img src="imgs/logal11.jpg">
+				<span><b>¥125</b></span><br>
+				<span><del>¥200</del></span>
+			</div>
+			<div class="miaos">
+				<img src="imgs/logal12.jpg">
+				<span><b>¥200</b></span><br>
+				<span><del>¥200</del></span>
+			</div>
+			<div class="miaos">
+				<img src="imgs/logal13.jpg">
+				<span><b>¥200</b></span><br>
+				<span><del>¥200</del></span>
+			</div>
+		</div>
+	</div>
+	<!-- 秒杀下面的大闸蟹 -->
+	<div class="xie">
+			<img src="imgs/local16.jpg">
+	</div>
+	<!-- 大闸蟹下面的好货 -->
+	<div class="good">
+		<div>
+			<div class="left1">
+				<span class="one"><b>闪购</b></span><br>
+				<span class="two">好货就1元</span>
+			</div>
+			<div class="left2">
+				<img src="imgs/good.jpg">
+			</div>
+		</div>
+		<div>
+			<div class="right1">
+				<span class="one"><b>发现好货</b></span><br>
+				<span class="two">发现品质生活</span>
+			</div>
+			<div class="right2">
+				<img src="imgs/logal009.jpg">
+			</div>
+		</div>
+		<div>
+			<div class="bottom-left1">
+				<span class="one"><b>排行榜</b></span><br>
+				<span class="two">实时热卖尖货</span>
+			</div>
+			<div class="bottom-left2">
+				<img src="imgs/logal19.jpg">
+			</div>
+		</div>
+		<div>
+			<div class="bottom-right1">
+				<span class="one"><b>会买专辑</b></span><br>
+				<span class="two">教你买买买</span>
+				<img src="imgs/logal008.jpg">
+			</div>
+			<div class="bottom-right2">
+			<span class="one"><b>会买专辑</b></span><br>
+				<span class="two">教你买买买</span>
+				<img src="imgs/logal24.jpg"></div>
+		</div>
+	</div>
+	<!-- 爱生活*部分 -->
+	<div class="life">
+		<!-- <img src="imgs/logal32.png" class="one"> -->
+		<img src="imgs/shenghuo1.jpg" class="two">
+	</div>
+	<!-- 爱生活*详细部分1 -->
+	<div class="lovelife">
+		<div>
+			<div class="left1">
+				<span class="one"><b>玩3C</b></span><br>
+				<span class="two">iPhone 7 超低价</span>
+				<span class="three">疯狂秒杀中</span>
+			</div>
+			<div class="left2">
+				<img src="imgs/local21.jpg">
+			</div>
+		</div>
+		<div>
+			<div class="right1">
+				<span class="one"><b>京东家电</b></span><br>
+				<span class="two">电视直降2000</span><br>
+				<span class="three">创维巅峰24H</span>
+			</div>
+			<div class="right2">
+				<img src="imgs/dianshi.jpg">
+			</div>
+		</div>
+		<div>
+			<div class="bottom-left1">
+				<span class="one"><b>京东超市</b></span><br>
+				<span class="two">满199减100</span>
+			</div>
+			<div class="bottom-left2">
+				<img src="imgs/market.jpg">
+			</div>
+		</div>
+		<div>
+			<div class="bottom-right1">
+				<span class="one"><b>爱家</b></span><br>
+				<span class="two">厨具好货300-50</span>
+				<span class="three">1元抢抢抢</span>
+			</div>
+			<div class="bottom-right2">
+				<img src="imgs/chuju.jpg">
+				</div>
+		</div>
+	</div>
+	<!-- 爱生活*详细部分2 -->
+	<div class="lovelife2">
+		<div class="one">
+			<span class="one1"><b>爱宝宝</b></span><br>
+				<span class="one2">爆款低至五折</span>
+				<img src="imgs/logal25.jpg">
+		</div>
+		<div class="two">
+			<span class="two1"><b>爱美丽</b></span><br>
+				<span class="two2">美妆0元试用</span>
+				<img src="imgs/local26.jpg">
+				<span class="two3">美妆趴</span>
+		</div>
+		<div class="three">
+			<span class="three1"><b>爱吃</b></span><br>
+				<span class="three2">低至9.9包邮</span>
+				<img src="imgs/logal26.jpg">
+				<span class="three3">囤零食</span>
+		</div>
+		<div class="four">
+			<span class="four1"><b>爱穿搭</b></span><br>
+				<span class="four2">秋天这么穿</span>
+				<img src="imgs/aug.jpg">
+				<span class="four3">低至39</span>
+		</div>
+	</div>
+	<!-- 爱生活最底部 -->
+	<div class="lifebottom">
+		<img src="imgs/banner8.jpg">
+	</div>	<!-- 第一个抢 -->
+	<div class="lifebottom ccc">
+		<img src="imgs/last.jpg">
+	</div><!-- 第二个抢 -->
+	<div class="more">
+		点击查看更多
+	</div>
+	<!-- footer部分 -->
+	<div class="foot">
+		<div class="i1">
+			<i class="icon iconfont icon-faxian"></i>
+		</div>
+		<div class="i1">
+			<i class="icon iconfont icon-fenlei"></i>
+		</div>
+		<div class="i1">
+			<i class="icon iconfont icon-gouwuche"></i>
+		</div>
+		<div class="i1">
+			<i class="icon iconfont icon-fenxiwodeweibo"></i>
+		</div>
+	</div>
+</body>
+</html>
+

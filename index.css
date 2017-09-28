@@ -1,0 +1,534 @@
+/* 头部 */
+.head{
+	width: 100%;
+	height: 0.8rem;
+	background: #ee1e02;
+	position: fixed;
+	top: 0;
+	z-index: 9;
+}
+.logo{
+	/* border: 1px solid white; */
+	width: 1.7em;
+	height: 1.7em;
+	z-index: 6;
+	position: absolute;
+	left: 0.45rem;
+	top: 0.235rem;
+}
+.head .search{
+	font-size: 0.2rem;
+	width: 85%;
+	height: 70%;
+	margin-top: 0.12rem;
+	margin:0.12rem 0 0 0.28rem;
+	border-radius: 0.26rem;
+	text-indent: 0.6rem;
+	/* background: url('./imgs/jd.png') no-repeat 10% 10% / 10% 10%; */
+}
+
+.head .login{
+	position: absolute;
+	right: 0.12rem;
+	top: 0.25rem;
+	font-size: 0.22rem;
+	color: #fff;
+}
+.head .login .area{
+	color:black;
+	display: none;
+	width: 0.5rem;
+	/* border: 1px solid white; */
+	height: 1rem;
+	overflow: auto;
+	background-color:white;
+	opacity: 0.5;
+
+}
+
+/* banner图 */
+.swiper-container {
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.8rem;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+/* 容器部分 */
+.content{
+	width: 100%;
+	height: auto;
+}
+.content .kinds{
+	width: 100%;
+	height: 2.6rem;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #eee;
+}
+.content .kinds .one{
+	width: 1.1rem;
+	height: 1.1rem;
+	float: left;
+	margin-top: 0.14rem;
+	margin-left: 0.15rem;
+}
+.content .kinds .one .one-top{
+	width: 0.8rem;
+	height: 0.8rem;
+	margin: 0 auto;
+}
+.content .kinds .one .one-top img{
+	width: 0.8rem;
+	height: 0.8rem;
+}
+.content .kinds .one .one-tips{
+	text-align: center;
+	margin-top: 0.08rem;
+}
+/* showmore  */
+.showmore{
+	width: 100%;
+    height: 1.7rem;
+}
+.showmore img{
+	width: 100%;
+	height: 100%;
+}
+/* 秒杀  */
+.kg{
+	/* border: 1px solid #000; */
+	width: 100%;
+	height: 0.15rem;
+	background-color: #eee;
+}
+.miao{
+	width: 100%;
+	height: 2.5rem;
+	/*border: 1px solid #000;*/
+}
+.miao .miao-left{
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	padding-left: 0.5rem;
+	/* border: 1px solid red; */
+}
+.miao .miaos{
+	display:inline-block;
+	width: 20%;
+	height: 2rem;
+	/*border: 1px solid red;*/
+	margin-left: 6%;
+	padding-left: 5.5%;
+	position: relative;
+}
+.miao-left img{
+	/*border: 1px solid #000;*/
+    width: 1rem;
+    height: 4%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    line-height: 3%;
+}
+.miao .miaos img{
+	width: 100%;
+	height:70%;
+	margin-left: -15%;
+}
+.miao .xianshi{
+	/* border: 1px solid #000; */
+	margin-left: 0.7rem;
+	font-size: 0.23rem;
+	color: red;
+	line-height: 0.23rem;
+}
+.miao .timespan{
+	/* border: 1px solid red; */
+	margin-left: 0.13rem;
+	font-size: 0.23rem;
+	color: black;
+	line-height: 0.23rem;
+}
+.miao .miaos span{
+	margin-left: -15%;
+	margin-top: 3%;
+	display:inline-block;
+	/*border: 1px solid #000;*/
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	font-size: 0.25rem;
+	line-height: 0.25rem;
+	color: red;
+}
+.miao .miaos span del{
+	color:#58585c;
+	font-weight:70;
+	font-size: 0.2rem;
+}
+/* 秒杀下面的大闸蟹 */
+.xie{
+	padding-top: 0.2rem;
+	width: 100%;
+    height: 1.7rem;
+}
+.xie img{
+	width: 100%;
+	height: 100%;
+}
+/* 大闸蟹下面的好货 */
+.good{
+	/* border: 1px solid purple; */
+	padding:0.15rem;
+	width: 100%;
+	height: 4rem;
+}
+.good div{
+	/* border: 1px solid #000; */
+	float: left;
+	width: 50%;
+	height: 50%;
+	box-sizing: border-box;
+}
+.good div div{
+	/* border: 1px solid green; */
+	width: 50%;
+	height: 100%;
+}
+.good .left1 .one{
+	font-size:0.27rem;
+}
+.good .left1 .two{
+	font-size:0.2rem;
+	color:#58585c;
+}
+.good .left2 img{
+	width: 100%;
+	height: 100%;
+}
+.good .right1 .one{
+	font-size:0.27rem;
+}
+.good .right1 .two{
+	font-size:0.2rem;
+	color:#58585c;
+}
+.good .right2 img{
+	width: 100%;
+	height: 100%;
+}
+.good .bottom-left1 .one{
+	font-size:0.27rem;
+}
+.good .bottom-left1 .two{
+	font-size:0.2rem;
+	color:#58585c;
+}
+.good .bottom-left2 img{
+	width: 100%;
+	height: 80%;
+	margin-top: 0.19rem;
+}	
+.good .bottom-right1 .one{
+	font-size:0.27rem;
+}
+.good .bottom-right1 .two{
+	font-size:0.2rem;
+	color:#58585c;
+}
+.good .bottom-right1 img{
+	width: 80%;
+	height: 60%;
+	margin-bottom: 0;
+	margin-left: 0.1rem;
+	margin-top: 0.08rem;
+}
+.good .bottom-right2 .one{
+	font-size:0.27rem;
+}
+.good .bottom-right2 .two{
+	font-size:0.2rem;
+	color:#58585c;
+}
+.good .bottom-right2 img{
+	width: 80%;
+	height: 67%;
+	margin-bottom: 0;
+	margin-left: 0.1rem;
+}
+/*爱生活*部分 */
+.life{
+	width: 100%;
+	height: 0.6rem;
+	/* border: 1px solid red; */
+	background: url(imgs/logal32.png) no-repeat 100% 100%/ 100% 100%;
+}
+/*.life .one{
+	width: 100%;
+	height: 100%;
+}*/
+.life .two{
+	width: 20%;
+	height: 90%;
+	margin-top: 0.06rem;
+	margin-left:2.7rem;
+}
+/*爱生活*详细部分1 */
+.lovelife{
+	padding:0.15rem;
+	/* border: 1px solid purple; */
+	width: 100%;
+	height: 4rem;
+}
+.lovelife div{
+	/* border: 1px solid #000; */
+	float: left;
+	width: 50%;
+	height: 50%;
+	box-sizing: border-box;
+}
+.lovelife div div{
+	/* border: 1px solid green; */
+	width: 50%;
+	height: 100%;
+	padding:0.1rem;
+}
+.lovelife .left1 .one{
+	font-size:0.27rem;
+}
+.lovelife .left1 .two{
+	font-size:0.2rem;
+	color:#58585c;
+}
+.lovelife .left1 .three{
+	background:#ff4a7d;
+	color: white;
+}
+.lovelife .left2 img{
+	width: 86%;
+	height: 79%;
+	margin-top: 0.2rem;
+}
+.lovelife .right1 .one{
+	font-size:0.27rem;
+}
+.lovelife .right1 .two{
+	font-size:0.2rem;
+	color:#58585c;
+}
+.lovelife .right1 .three{
+	background:#ff4a7d;
+	color: white;
+}
+.lovelife .right2 img{
+	width: 95%;
+	height: 100%;
+}
+.lovelife .bottom-left1 .one{
+	font-size:0.27rem;
+}
+.lovelife .bottom-left1 .two{
+	font-size:0.2rem;
+	color:#58585c;
+}
+.lovelife .bottom-left2 img{
+	margin-left: -0.08rem;
+	width: 96%;
+	height: 95%;
+}	
+.lovelife .bottom-right1 .one{
+	font-size:0.27rem;
+	/* margin-left: 0.1rem; */
+}
+.lovelife .bottom-right1 .two{
+	font-size:0.2rem;
+	color:#58585c;
+	/* margin-left: 0.1rem; */
+}
+.lovelife .bottom-right1 .three{
+	background:#ff4a7d;
+	color: white;
+	/* margin-left: 0.1rem; */
+}
+.lovelife .bottom-right1 img{
+	width: 80%;
+	height: 67%;
+	margin-bottom: 0;
+	margin-left: 0.1rem;
+}
+.lovelife .bottom-right2 img{
+	width: 90%;
+	height: 67%;
+	margin-top: 0.26rem;
+}
+/* 爱生活*详细部分2*/
+.lovelife2{
+	padding:0.15rem 0.15rem;
+	width: 100%;
+	height: 2rem;
+	/* border: 1px solid yellow; */
+	position: relative;
+}
+.lovelife2 div{
+	/* border: 1px solid red; */
+	float: left;
+	width: 25%;
+	height:100%;
+	box-sizing: border-box;
+}
+.lovelife2 .one1{
+	font-size:0.27rem;
+}
+.lovelife2 .one2{
+	font-size:0.2rem;
+	color:#58585c;
+}
+.lovelife2 .one img{
+	width: 90%;
+	height: 66%;
+	margin-bottom: 0;
+	margin-left: 0.1rem;
+}
+.lovelife2 .two1{
+	font-size:0.27rem;
+}
+.lovelife2 .two2{
+	font-size:0.2rem;
+	color:#58585c;
+}
+.lovelife2 .two img{
+	width: 90%;
+	height:65%;
+	margin-bottom: 0;
+	margin-left: 0.1rem;
+}
+.lovelife2 .three1{
+	font-size:0.27rem;
+}
+.lovelife2 .three2{
+	font-size:0.2rem;
+	color:#58585c;
+}
+.lovelife2 .three img{
+	width: 90%;
+	height: 66%;
+	margin-bottom: 0;
+	margin-left: 0.1rem;
+}
+.lovelife2 .four1{
+	font-size:0.27rem;
+}
+.lovelife2 .four2{
+	font-size:0.2rem;
+	color:#58585c;
+}
+.lovelife2 .four img{
+	width: 90%;
+	height: 66%;
+	margin-bottom: 0;
+	margin-left: 0.05rem;
+}
+.lovelife2 .two3{
+	position: absolute;
+	background:#ff4a7d;
+	color: white;
+	left: 1.8rem;
+	top: 1.9rem;
+}
+.lovelife2 .three3{
+	position: absolute;
+	background:#ff4a7d;
+	color: white;
+	left: 3.4rem;
+	top: 1.9rem;
+}
+.lovelife2 .four3{
+	position: absolute;
+	background:#ff4a7d;
+	color: white;
+	left: 5rem;
+	top: 1.9rem;
+}
+/* 爱生活最底部 */
+.lifebottom{
+	width: 100%;
+	height: 1.7rem;
+	/* border: 2px solid yellow; */
+}
+.lifebottom img{
+	width: 100%;
+	height: 100%;
+}
+/* 第二个抢收放 */
+.ccc{
+	display: none;
+}
+.more{
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;	
+	background-color: #f3f5f7;
+	margin-top: 0.02rem;
+}
+/* footer部分 */
+.foot{
+	margin-top: 0.8rem;
+	position: fixed;
+	bottom: 0;
+	z-index: 9;
+	background:white;
+	/* border: 1px solid red; */
+	width: 100%;
+	height: 0.8rem;
+	position:fixed;
+	display: flex;
+	justify-content: space-around;
+}
+.foot div{
+	box-sizing: border-box;
+	/* border: 1px solid red; */
+	width: 1.5rem;
+	height: 100%;
+	text-align: center;
+}
+.foot i{
+	display: block;
+	font-size: 0.39rem;
+	margin-top: 0.19rem;
+}
+.foot .i1:first-child{
+	color: red;
+}
+body{
+	padding-bottom: 0.8rem;
+	overflow-x:hidden; 
+}
+
+
+
+
+
